@@ -10,8 +10,8 @@ git clone https://github.com/Atinoda/text-generation-webui-docker.git
 Copy-Item -Path "./../resources/*" -Destination "./text-generation-webui-docker/config/models"
 
 # Wechsle zurück in das ursprüngliche Verzeichnis
-Set-Location -Path $PSScriptRoot
+cd..
 
 # Baue lumidora-tg-webui docker image
-docker build -t lumidora-tg-webui .
+#docker build -t lumidora-tg-webui .
 
